@@ -53,6 +53,9 @@ function App() {
 
   return (
     <div id="top" className="site-shell">
+      <div className="letterbox-top" aria-hidden="true" />
+      <div className="letterbox-bottom" aria-hidden="true" />
+
       <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
         <Logo />
         <nav className={`main-nav ${menuOpen ? 'main-nav--open' : ''}`} aria-label="Main navigation">
@@ -95,11 +98,13 @@ function App() {
         <section className="work-section" id="work">
           <div className="section-heading"><div><p className="section-label">02 / What we do</p><h2>Made for <em>meaning.</em></h2></div><p className="heading-note">Selected disciplines<br />of our craft</p></div>
           <div className="work-grid">
-            {work.map((item) => <article className="work-card" key={item.number}><div className="work-image"><img src={item.image} alt={item.alt} loading="lazy" /><span className="work-number">{item.number}</span><span className="work-arrow"><ArrowUpRight /></span></div><div className="work-meta"><h3>{item.title}</h3><p>{item.tag}</p></div></article>)}
+            {work.map((item) => <article className="work-card" key={item.number}><div className="work-image"><img src={item.image} alt={item.alt} loading="lazy" /><span className="work-number">{item.number}</span><span className="work-arrow"><ArrowUpRight /></span><span className="work-tag-top">{item.tag}</span></div><div className="work-meta"><h3>{item.title}</h3><p>{item.tag}</p></div></article>)}
           </div>
         </section>
 
-        <section className="about-band">
+        <div className="reel-divider" aria-hidden="true"><span>★</span> End of reel <span>★</span></div>
+
+        <section className="about-band" id="about-band">
           <div className="about-photo"><img src="/images/IMG_20260224_163452_913.webp" alt="Lavkumar Prajapati, CEO and founder of Lovegraphy Productions" /></div>
           <div className="about-mark" aria-hidden="true">L<span>◒</span></div>
           <div className="about-copy"><p className="section-label">03 / The maker</p><h2>Meet <em>Lavkumar.</em></h2><p>CEO & Founder. Content and shooting artist with 7 years of turning fleeting moments into lasting stories.</p><a href="#contact" className="text-link text-link--light">Get to know us <ArrowUpRight /></a></div>
