@@ -293,6 +293,12 @@ function App() {
             Lovegraphy Media
           </a>
         </div>
+        <div className="association">
+          <span className="association-text">In association with</span>
+          <a href="https://www.lovegraphymedia.in" target="_blank" rel="noreferrer" className="association-logo">
+            <img src="/images/file_00000000d128720ba4b334cd306b2907.png" alt="Lovegraphy Media" />
+          </a>
+        </div>
         <p>© 2025 Lovegraphy Productions</p>
       </footer>
 

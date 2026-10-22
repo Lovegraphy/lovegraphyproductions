@@ -493,6 +493,31 @@ footer .logo { color: var(--paper); }
 .footer-links > a:not(.social-link):hover { color: var(--blue); }
 footer > p { font: 9px var(--mono); color: var(--muted); margin: 0; width: 100%; }
 
+/* ASSOCIATION */
+.association {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  margin-top: 8px;
+}
+.association-text {
+  font: 500 10px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.association-logo img {
+  max-height: 44px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.association-logo:hover img { opacity: 1; }
+
 /* STICKY ENQUIRY BUTTON */
 .sticky-enquiry {
   position: fixed;
