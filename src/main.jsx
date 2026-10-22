@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const INSTA_URL = 'https://www.instagram.com/lovegraphyproductions/';
+const LAV_INSTA_URL = 'https://www.instagram.com/heyy._lavv';
 const FB_URL = 'https://www.facebook.com/';
 const WA_URL = 'tel:+918275001572';
 
@@ -281,6 +282,9 @@ function App() {
           </a>
           <a href={FB_URL} target="_blank" rel="noreferrer" className="social-link">
             <FacebookIcon /> Facebook
+          </a>
+          <a href={LAV_INSTA_URL} target="_blank" rel="noreferrer" className="social-link">
+            <InstagramIcon /> Lavkumar
           </a>
           <a href="https://www.lovegraphymedia.in" target="_blank" rel="noreferrer">
             Lovegraphy Media
