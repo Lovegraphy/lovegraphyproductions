@@ -250,6 +250,9 @@ function App() {
             <a href="#contact" className="text-link text-link--light">
               Get to know us <ArrowUpRight />
             </a>
+            <a href={LAV_INSTA_URL} target="_blank" rel="noreferrer" className="maker-insta">
+              <InstagramIcon /> @heyy._lavv
+            </a>
           </div>
         </section>
 
