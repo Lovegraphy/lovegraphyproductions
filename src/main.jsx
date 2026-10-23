@@ -5,7 +5,7 @@ import './styles.css';
 const INSTA_URL = 'https://www.instagram.com/lovegraphyproductions/';
 const LAV_INSTA_URL = 'https://www.instagram.com/heyy._lavv';
 const FB_URL = 'https://www.facebook.com/';
-const WA_URL = 'tel:+918275001572';
+const WA_URL = 'https://wa.me/918275001572';
 
 const reels = [
   {
@@ -243,16 +243,33 @@ function App() {
             <p className="section-label">03 / The maker</p>
             <h2>Meet <em>Lavkumar.</em></h2>
             <p>
-              CEO & Founder. A shooting artist with seven years of turning
-              fleeting moments into lasting stories. He sees the frame before
-              the camera rolls.
+              Lavkumar Prajapati is an engineer and cybersecurity specialist,
+              a content creator, shooting artist, and influencer. He is the
+              founder and CEO of Lovegraphy Productions, where he also serves as
+              a film producer — and he runs Lovegraphy Media, bringing the same
+              creative vision across both brands.
             </p>
-            <a href="#contact" className="text-link text-link--light">
-              Get to know us <ArrowUpRight />
-            </a>
-            <a href={LAV_INSTA_URL} target="_blank" rel="noreferrer" className="maker-insta">
-              <InstagramIcon /> @heyy._lavv
-            </a>
+            <p>
+              With seven years behind the lens, he sees the frame before the
+              camera rolls. Every project he touches carries the same standard:
+              stories told the way they deserve to be told.
+            </p>
+            <div className="maker-tags">
+              <span>Engineer</span>
+              <span>Cybersecurity Specialist</span>
+              <span>Film Producer</span>
+              <span>CEO & Founder</span>
+              <span>Shooting Artist</span>
+              <span>Influencer</span>
+            </div>
+            <div className="maker-actions">
+              <a href={LAV_INSTA_URL} target="_blank" rel="noreferrer" className="maker-insta">
+                <InstagramIcon /> @heyy._lavv
+              </a>
+              <a href="#contact" className="text-link text-link--light">
+                More <ArrowUpRight />
+              </a>
+            </div>
           </div>
         </section>
 
@@ -285,9 +302,6 @@ function App() {
           </a>
           <a href={FB_URL} target="_blank" rel="noreferrer" className="social-link">
             <FacebookIcon /> Facebook
-          </a>
-          <a href={LAV_INSTA_URL} target="_blank" rel="noreferrer" className="social-link">
-            <InstagramIcon /> Lavkumar
           </a>
           <a href="https://www.lovegraphymedia.in" target="_blank" rel="noreferrer">
             Lovegraphy Media

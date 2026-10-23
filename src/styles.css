@@ -434,7 +434,6 @@ svg { display: block; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 20px;
   font: 500 12px var(--mono);
   letter-spacing: 0.08em;
   color: var(--blue);
@@ -442,6 +441,30 @@ svg { display: block; }
   transition: opacity 0.25s;
 }
 .maker-insta:hover { opacity: 1; }
+.maker-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 8px;
+}
+.maker-tags span {
+  font: 500 9px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  color: var(--paper);
+  transition: 0.25s;
+}
+.maker-tags span:hover { border-color: var(--blue); color: var(--blue); }
+.maker-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
 
 /* CONTACT */
 .contact { background: var(--ink); padding: 130px 8vw 130px; position: relative; }
