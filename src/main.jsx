@@ -166,6 +166,12 @@ function App() {
 
   return (
     <div id="top" className="site-shell">
+      <div className="bg-blobs" aria-hidden="true">
+        <span className="blob blob--teal" />
+        <span className="blob blob--coral" />
+        <span className="blob blob--gold" />
+        <span className="blob blob--teal2" />
+      </div>
       <div className="grain-overlay" aria-hidden="true" />
       <div className="scroll-progress" style={{ transform: `scaleX(${progress})` }} aria-hidden="true" />
 
